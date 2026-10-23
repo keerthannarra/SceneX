@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="SceneSolver API",
+    title="SceneX API",
     description="AI-Powered Crime Scene Investigation Assistant",
     version="1.0.0",
     lifespan=lifespan,
@@ -52,4 +52,4 @@ app.include_router(classify_router)
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "SceneSolver API", "version": "1.0.0"}
+    return {"status": "ok", "service": "SceneX API", "version": "1.0.0"}

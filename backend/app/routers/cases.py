@@ -211,7 +211,7 @@ async def download_report(case_id: str, current_user=Depends(get_current_user)):
     return FileResponse(
         path=str(report_path),
         media_type="application/pdf",
-        filename=f"SceneSolver_{case_id}_Report.pdf",
+        filename=f"SceneX_{case_id}_Report.pdf",
     )
 
 

@@ -52,7 +52,7 @@ export default function Layout({ children }) {
             <Shield className="w-5 h-5 text-white" />
           </div>
           <div>
-            <p className="font-bold text-white text-base leading-none">SceneSolver</p>
+            <p className="font-bold text-white text-base leading-none">SceneX</p>
             <p className="text-xs text-blue-300 mt-0.5">AI Investigation</p>
           </div>
           <button className="ml-auto lg:hidden text-white/60" onClick={() => setSidebarOpen(false)}>

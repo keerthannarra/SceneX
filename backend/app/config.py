@@ -5,7 +5,7 @@ from typing import List
 class Settings(BaseSettings):
     # ── Database ──────────────────────────────────────────────────────────────
     MONGODB_URL: str          # required — set in .env
-    DATABASE_NAME: str = "scenesolver"
+    DATABASE_NAME: str = "scenex"
 
     # ── Auth ──────────────────────────────────────────────────────────────────
     JWT_SECRET_KEY: str       # required — set in .env

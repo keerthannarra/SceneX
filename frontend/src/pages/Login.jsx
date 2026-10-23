@@ -46,7 +46,7 @@ export default function Login() {
             <div className="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center">
               <Shield className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl text-gray-900">SceneSolver</span>
+            <span className="font-bold text-xl text-gray-900">SceneX</span>
           </Link>
           <h1 className="text-2xl font-bold text-gray-900 mt-6">Sign in</h1>
           <p className="text-gray-500 text-sm mt-1">Enter your credentials to continue</p>

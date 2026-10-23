@@ -64,7 +64,7 @@ export default function CaseDetail() {
       const url = URL.createObjectURL(new Blob([res.data], { type: 'application/pdf' }))
       const a = document.createElement('a')
       a.href = url
-      a.download = `SceneSolver_${caseId}_Report.pdf`
+      a.download = `SceneX_${caseId}_Report.pdf`
       a.click()
       URL.revokeObjectURL(url)
     } catch (err) {

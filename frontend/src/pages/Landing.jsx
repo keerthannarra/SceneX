@@ -63,7 +63,7 @@ export default function Landing() {
             <div className="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center">
               <Shield className="w-4.5 h-4.5 text-white" size={18} />
             </div>
-            <span className="font-bold text-gray-900 text-lg">SceneSolver</span>
+            <span className="font-bold text-gray-900 text-lg">SceneX</span>
           </div>
           <div className="flex items-center gap-3">
             <Link to="/login" className="text-sm text-gray-600 hover:text-gray-900 font-medium transition-colors">
@@ -87,7 +87,7 @@ export default function Landing() {
           <span className="text-blue-700"> Automated</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Upload a scene image. SceneSolver classifies the crime, detects evidence, 
+          Upload a scene image. SceneX classifies the crime, detects evidence,
           assesses risk, and generates a full forensic PDF report — in under 30 seconds.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -165,7 +165,7 @@ export default function Landing() {
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-8 text-center text-sm text-gray-400">
-        <p>SceneSolver — AI-Powered Crime Scene Investigation Assistant · Phase 1 v1.0 · June 2026</p>
+        <p>SceneX — AI-Powered Crime Scene Investigation Assistant · Phase 1 v1.0 · June 2026</p>
         <p className="mt-1 text-xs">All AI outputs are probabilistic and advisory. Not a legal determination.</p>
       </footer>
     </div>

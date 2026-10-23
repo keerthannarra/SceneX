@@ -1,4 +1,4 @@
-# SceneSolver — AI-Powered Crime Scene Investigation Assistant
+# SceneX — AI-Powered Crime Scene Investigation Assistant
 
 Phase 1 · v1.0 · June 2026
 
@@ -20,7 +20,7 @@ Phase 1 · v1.0 · June 2026
 
 ```bash
 # 1. Clone and enter
-cd scenesolver
+cd scenex
 
 # 2. Configure secrets
 cp .env.example .env
@@ -118,7 +118,7 @@ Full interactive docs: `http://localhost:8000/docs`
 ## Directory Structure
 
 ```
-scenesolver/
+scenex/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py              FastAPI app + lifespan

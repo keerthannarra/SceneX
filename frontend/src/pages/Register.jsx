@@ -45,7 +45,7 @@ export default function Register() {
         role: form.role,
         department: form.department || undefined,
       })
-      toast.success('Account created! Welcome to SceneSolver.')
+      toast.success('Account created! Welcome to SceneX.')
       navigate('/dashboard')
     } catch (err) {
       setError(err.response?.data?.detail || 'Registration failed.')
@@ -62,7 +62,7 @@ export default function Register() {
             <div className="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center">
               <Shield className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl text-gray-900">SceneSolver</span>
+            <span className="font-bold text-xl text-gray-900">SceneX</span>
           </Link>
           <h1 className="text-2xl font-bold text-gray-900 mt-6">Create account</h1>
           <p className="text-gray-500 text-sm mt-1">Register your organization</p>

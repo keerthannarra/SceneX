@@ -4,14 +4,14 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: scenesolver-backend
+    container_name: scenex-backend
     restart: unless-stopped
     ports:
       - "8000:8000"
     environment:
       # Override only the values that differ inside Docker
       - MONGODB_URL=${MONGODB_URL} # Atlas URL — sourced from backend/.env
-      - DATABASE_NAME=scenesolver
+      - DATABASE_NAME=scenex
       - STORAGE_PATH=/app/storage
       - ALLOWED_ORIGINS=http://localhost,http://localhost:80
       # These come from backend/.env via env_file below
@@ -32,7 +32,7 @@ services:
       - backend_storage:/app/storage
       - backend_models:/app/models
     networks:
-      - scenesolver-net
+      - scenex-net
     healthcheck:
       test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" ]
       interval: 30s
@@ -44,7 +44,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: scenesolver-frontend
+    container_name: scenex-frontend
     restart: unless-stopped
     ports:
       - "80:80"
@@ -52,12 +52,12 @@ services:
       backend:
         condition: service_started
     networks:
-      - scenesolver-net
+      - scenex-net
 
 volumes:
   backend_storage:
   backend_models:
 
 networks:
-  scenesolver-net:
+  scenex-net:
     driver: bridge
